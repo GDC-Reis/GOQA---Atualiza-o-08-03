@@ -1,0 +1,239 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
+}
+
+.container_img_bg_intro_text{
+    display: block;
+    text-align: center;
+    margin-top: -44rem;
+    font-size: 6rem;
+    font-weight: 500;
+    margin-bottom: 8rem;
+    color: #1c8165;
+}
+
+.container_card_info{
+    width: 100%;
+    /* background: linear-gradient(to bottom,#2B9B7B, #04263A); */
+    background-color: #04263a;
+    background-image: url("../../img/teste_img/topography.svg") ;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.container_card_info__title{
+    padding: 1.75rem;
+    color: white;
+}
+
+
+.container_card_info__title::after {
+    content: "";
+    background-color: white;
+    padding: 0.2rem;
+    border-radius: 20px;
+    display: block;
+    width: 17rem;
+    margin-left: 31.9rem;
+}
+
+.container_card_info__itens {
+    margin: 1.5rem;
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.container_infoEmpresa {
+    position: relative;
+    z-index: 1;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.container_main_diferenciais{
+    background-color: white;
+}
+
+.container_diferenciais {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 1.5rem 3rem;
+    padding: 20px 40px;
+}
+
+.teste_title{
+    text-align: center;
+    padding: .3rem;
+    position: relative;
+}
+
+.teste_title h1::after{
+    content: "";
+    background-color: black;
+    padding: 0.2rem;
+    border-radius: 20px;
+    display: block;
+    width: 17rem;
+    margin-left: 33.7rem;
+}
+
+@media (min-width: 1920px){
+    .container_card_info__title::after {
+        margin-left: 49.5rem;
+    }
+
+    .teste_title h1::after{
+        margin-left: 50.9rem;
+    }
+}
+
+@media (min-width: 1912px){
+    .container_card_info__title::after {
+        margin-left: 49.5rem;
+    }
+
+    .teste_title h1::after{
+        margin-left: 50.9rem;
+    }
+}
+
+@media (min-width: 1366){
+
+    .container_card_info__title::after{
+        margin-left: 32.5rem;
+    }
+    
+    .teste_title h1::after{ display: none;
+        margin-left: 33.9rem;
+    }
+}
+
+@media(max-width: 1300px){
+
+    .container_card_info__title::after{
+        display: none;
+    }
+    
+    .teste_title h1::after{
+        display: none;
+    }
+
+    .container_card_info__itens{
+        grid-template-columns: 1fr 1fr;
+        margin: 0rem 2.6rem;
+    }
+
+    .container_diferenciais{
+        margin: 0rem 2rem;
+    }
+
+    .container_card_info__title::after{
+        display: none;
+    }
+
+    .teste_title h1::after{
+        display: none;
+    }
+}
+
+@media (min-width: 1912px){
+    .container_img_bg_intro_text{
+        margin-top: -58rem;
+        margin-bottom: 17rem;
+    }
+
+    .container_card_info__itens {
+        justify-items: baseline;
+    }
+}
+
+@media (max-width: 1200px){
+    .container_img_bg_intro_text{
+        margin-top: -32rem;
+        font-size: 5rem;
+
+    }
+
+    .container_infoEmpresa{
+        max-width: 65rem;
+    }
+}
+
+@media (max-width: 900px){
+    .container_card_info__itens{
+        margin: 0rem;
+    }
+
+    .container_card_info__title::after{
+        display: none;
+    }
+
+    .teste_title h1::after{
+        display: none;
+    }
+
+    .container_infoEmpresa{
+        max-width: 50rem;
+    }
+    
+    .container_diferenciais{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        
+    }
+
+}
+
+@media (max-width: 860px ){
+    .container_card_info__itens{
+        grid-template-columns: 1fr;
+    }
+
+    .container_img_bg_intro_text{
+        padding: 2rem;
+    }
+
+    .container_diferenciais{
+        flex-direction: column;
+    }
+
+    .container_diferenciais:nth-child(3){
+        width: 100%;
+        background: yellow;
+    }
+    
+}
+
+
+@media (max-width: 815px){
+    .container_img_bg_intro_text {
+        /* padding: 2rem; */
+        padding: 1rem;
+        margin-top: -29rem;
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 550px){
+    .container_img_bg_intro_text{
+        padding: 1rem;
+        margin-top: -16rem;
+        font-size: 1.89rem;
+    }
+}
